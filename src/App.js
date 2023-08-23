@@ -1,3 +1,11 @@
+const Pet = () => {
+  return React.createElement("div", {}, [
+    React.createElement("h1", {}, "Luna"),
+    React.createElement("h2", {}, "Cat"),
+    React.createElement("h2", {}, "Mixed"),
+  ])
+};
+
 const App = () => {
   return React.createElement(
     "div",
