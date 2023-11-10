@@ -26,6 +26,7 @@ const SearchParams = () => {
             value={animal}
             onChange={(event) => {
               setAnimal(event.target.value);
+              setBreed("");
             }}
           >
             <option />
@@ -38,6 +39,7 @@ const SearchParams = () => {
           Breed
           <select
             id="breed"
+            disabled={breeds.length === 0}
             value={breed}
             onChange={(event) => {
               setBreed(event.target.value);
