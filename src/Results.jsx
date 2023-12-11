@@ -1,12 +1,12 @@
-import Pet from "/Pet";
+import Pet from "./Pet";
 
-const Results = { pets } => {
+const Results = ({ pets }) => {
   return (
-    <div className='search'>
+    <div className="search">
       {!pets.length ? (
         <h1>No Pets Found</h1>
       ) : (
-        pet.map(pet => (
+        pets.map((pet) => (
           <Pet
             name={pet.name}
             animal={pet.animal}
@@ -21,4 +21,4 @@ const Results = { pets } => {
   );
 };
 
-export default Results
+export default Results;
